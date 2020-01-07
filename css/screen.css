@@ -34,6 +34,7 @@ a.btn {
 
 a.btn:hover { background-color: rgba(0,0,0,0.8);}
 
+
 /* Header */
 
 header {height:430px; background:#cf0004 url('../image/banner_1200.jpg') no-repeat center bottom; position: relative;
@@ -63,3 +64,18 @@ header div.hero h1 {
      margin: 0 0 30px 0;
      color: #fff;
 }
+/* Section-All */
+section { padding: 0 30px;}
+/* Clear the float */
+section::after {content: ""; display:block; clear:both}
+
+/* Section-Main  */
+section.main { margin-top: 20px; margin-bottom:30px; padding: 0;}
+section.main aside { width:33%; float: left; text-align: center;}
+section.main .content {margin:15px; background: no-repeat center top; background-size: 75px 75px;padding-top: 85px;}
+
+section.main aside h3 a{ text-decoration:none;}
+section.main aside h3 a:hover{ color: rgba(40, 150, 165, 0.4);}
+section.main .content.trending{background-image: url('../image/icon_star.svg');}
+section.main .content.find-it{background-image: url('../image/icon_gear.svg');}
+section.main .content.tools{background-image: url('../image/icon_marker.svg');}

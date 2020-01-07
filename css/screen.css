@@ -1,3 +1,65 @@
 /* CSS Document for Screens */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap');
 
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+     color: #555
+}
+#page {max-width: 1200px; margin: 0 auto; position: relative;}
 
+/* Text */
+h1 {margin : 0 0 1em 0; font-size: 2.8em; font-weight: 700;}
+h2 {margin : 0 0 0.5em 0; font-size: 1.6em; font-weight: 700;}
+h3 {margin : 0 0 0.5em 0; font-size: 1.3em; font-weight: 700;}
+h4 {margin : 0 0 1.5em 0; font-size: 1em; font-weight: 700;}
+
+p { margin : 0 0 1em 0;}
+
+a {color : #007eff;}
+a:visited {color:#65b1ff}
+
+a.btn {
+     text-decoration:none; 
+     font-size: 1.2em; 
+     color: #fff; 
+     border: solid 1px #fff; 
+     padding: 4px 15px;
+     transition: background-color .5s;
+
+}
+
+a.btn:hover { background-color: rgba(0,0,0,0.8);}
+
+/* Header */
+
+header {height:430px; background:#cf0004 url('../image/banner_1200.jpg') no-repeat center bottom; position: relative;
+background-size:cover;}
+
+header a.site-logo {
+     width:139px;
+     height:66px;
+     display:block;
+     position: absolute;
+     background: url('../image/logo.svg') no-repeat 0 0;
+     background-size: contain;
+}
+header a.site-logo span {
+     display: none;
+}
+
+header div.hero {
+      width :42%;
+      position: absolute;
+      top:240px;
+      left:55%;
+}
+
+header div.hero h1 {
+     line-height: 1em;
+     margin: 0 0 30px 0;
+     color: #fff;
+}

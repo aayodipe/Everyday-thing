@@ -111,10 +111,10 @@ section.how-to blockquote p.quote::before{
      font-family: serif;
      position: absolute; top: 10px; left:10px;
      font-size: 3.5em;}
-     
+
 section.how-to blockquote p.quote::after{content: '\201d';}
 section.how-to blockquote p {margin:30px 30px 30px 50px}
-section.how-to blockquote p.quote {font-size:1.2em; font-style: italic;}
+section.how-to blockquote p.quote {font-size:1.2em; font-style: italic; font-family: serif;}
 
 section.how-to blockquote p.credit {
      color:#777;  
@@ -124,3 +124,13 @@ section.how-to blockquote p.credit {
      line-height: 1.3em;
      padding-left:20px;
 }
+
+section.how-to blockquote p.credit::before {content:'\2014';position: absolute; top:-1px; left: 0;}
+
+/* Footer */
+
+footer {font-size: .8em; color:#999; margin: 40px;}
+footer .content{display: inline;}
+footer a {margin-left:30px; color: #777;}
+footer a:visited {margin-left:30px; color: #777;}
+footer a:hover {margin-left:30px; color: #000;}

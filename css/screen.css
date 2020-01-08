@@ -87,3 +87,40 @@ section.main .content.tools{background-image: url('../image/icon_marker.svg');}
 section.atmosphere {padding-top:30px; padding-bottom: 30px; color:#fff;  background-color: rgb(125, 153, 69); }
 section.atmosphere article {padding:10px 30px 0 515px; background: url('../image/photo_lighting.jpg')no-repeat 0 5px; min-height:220px;
 background-size: contain;}
+
+/* Section How-to */
+
+section.how-to {background-color: #eee9e9; margin: 20px 0; position: relative;}
+section.how-to aside {width:33%; float:left; margin-right:10px}
+section.how-to aside .content {padding: 30px 30px 20px 0;}
+section.how-to aside .content img { width: 70%; display: block; margin-bottom: 15px;}
+section.how-to aside .content h4 {margin-bottom: 0.1em;}
+section.how-to aside .content p {margin-bottom: 0.5em;}
+section.how-to aside .content a {display: inline-block;color:#cc6633;font-weight: 700;}
+
+section.how-to blockquote {
+     margin:0; width:32%; 
+     background-color: #fff; 
+     color: #444;
+     position: absolute;
+     right:4%; bottom: 0;
+}
+section.how-to blockquote p.quote::before{
+     content: '\201c'; 
+     color:#d2bd65; 
+     font-family: serif;
+     position: absolute; top: 10px; left:10px;
+     font-size: 3.5em;}
+     
+section.how-to blockquote p.quote::after{content: '\201d';}
+section.how-to blockquote p {margin:30px 30px 30px 50px}
+section.how-to blockquote p.quote {font-size:1.2em; font-style: italic;}
+
+section.how-to blockquote p.credit {
+     color:#777;  
+     font-size: .9em;
+     position: relative;
+     margin-top: 0;
+     line-height: 1.3em;
+     padding-left:20px;
+}

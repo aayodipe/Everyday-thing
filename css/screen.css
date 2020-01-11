@@ -276,7 +276,7 @@ nav {padding-left: 120px;}
 nav > ul {padding-left:10px}
 }
 
-@media screen and (max-width:625px){ 
+@media (min-width:426px) and (max-width:625px){ 
 h1 {font-size: 1.0em;}
 h3 {margin-bottom: 0px;}
 a.btn {font-size: 0.9em;}
@@ -369,7 +369,7 @@ footer div.content {display:block; margin-top: 15px;}
 footer div.content a{margin: 0 20px 0 0;}
 }
 
-@media screen and (max-width:425px){
+@media (min-width:150px) and (max-width:425px){
      /* header  */
      header {height: 110px;background-image: url('../image/banner_425.jpg');}
 

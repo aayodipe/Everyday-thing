@@ -55,15 +55,15 @@ header a.site-logo span {
 }
 
 header div.hero {
-      width :42%;
+      width :40%;
       position: absolute;
-      top:240px;
-      left:55%;
+      top:200px;
+      left:61%;
 }
 
 header div.hero h1 {
      line-height: 1em;
-     margin: 0 0 30px 0;
+     margin: 0 0 20px 0;
      color: #fff;
 }
 /* Section-All */
@@ -86,7 +86,7 @@ section.main .content.tools{background-image: url('../image/icon_marker.svg');}
 /* Section Atmosphere */
 
 section.atmosphere {padding-top:30px; padding-bottom: 30px; color:#fff;  background-color: rgb(125, 153, 69); }
-section.atmosphere article {padding:10px 30px 0 515px; background: url('../image/photo_lighting.jpg')no-repeat 0 5px; min-height:220px;
+section.atmosphere article {padding:10px 30px 0 400px; background: url('../image/photo_lighting.jpg')no-repeat 0 5px; min-height:220px;
 background-size: contain;}
 
 /* Section How-to */
@@ -110,7 +110,7 @@ section.how-to blockquote p.quote::before{
      content: '\201c'; 
      color:#d2bd65; 
      font-family: serif;
-     position: absolute; top: 10px; left:10px;
+     position: absolute; top: 30px; left:10px;
      font-size: 3.5em;}
 
 section.how-to blockquote p.quote::after{content: '\201d';}
@@ -200,12 +200,8 @@ nav > ul > li > a[aria-haspopup = "true"]::after {
      border-right: 4px solid transparent;
      border-top: 4px solid #fff;
      left:auto; right:10px;
-     bottom:30px; top:25px;
-
-
+     bottom:30px; top:25px
 }
-
-
 /* Footer */
 
 footer {font-size: .8em; color:#999; margin: 40px;}
@@ -213,3 +209,69 @@ footer .content{display: inline;}
 footer a {margin-left:30px; color: #777;}
 footer a:visited {margin-left:30px; color: #777;}
 footer a:hover {margin-left:30px; color: #000;}
+
+
+/* Screen Size for desktop */
+@media (min-width:1028px) and (max-width:1165px){
+     h1 {font-size: 2.5em;}
+     h2 {font-size: 1.4em;}
+     
+      /* header  */
+      header div.hero {top:46%; left:61%} ;
+      header div.hero h1 {margin-bottom:20px;}
+     
+      /* Section- Atmospere */
+      section.atmosphere article { padding-left:400px;background-size:375px auto}
+     }
+ @media (min-width:760px) and (max-width:1027px){
+     h1 {font-size: 2.2em;}
+     h2 {font-size: 1.2em;}
+     /* header */
+     header {height:300px; background-image: url('../image/banner_825.jpg');}
+
+     header div.hero {top:120PX; left:58%} ;
+      header div.hero h1 {margin-bottom:20px;}
+
+     /* Section- Atmospere */
+      section.atmosphere article {padding-left: 325px;background-size: 300px auto; }
+           
+     /* Section How-to */
+
+      section.how-to blockquote p.quote { font-size: 1.1em; line-height: 1.2em;} 
+
+     section.how-to blockquote p.credit { font-size: .85em; } 
+     
+}
+
+@media screen and (max-width:760px){ 
+h1 {font-size: 1.8em;}
+h2 {font-size: 1.0em;}
+h3 {font-size: 1.0em;}
+a.btn {font-size: 1.0em;}
+
+/* header */
+header {height:240px; background-image: url('../image/banner_625.jpg');}
+ header a.logo {width: 145px; height: 60px;}
+ 
+header div.hero {top:130px; left :58%};  
+
+/* section main  */
+section.main {margin-top:10px; margin-bottom: 10px;}
+section.main aside div.content {background-size: 55px 55px; padding-top: 60px;} 
+section.main aside div.content img {width: 85%;}
+/* Section Atmosphere */
+
+section.atmosphere article {padding:10px 10px 0 370px; background: url('../image/photo_lighting.jpg')no-repeat 0 5px; min-height:200px;
+background-size: 50%;}
+
+/* section.atmosphere article h2{ font-size: 1.2;} */
+
+/* section How-to  */
+section.how-to blockquote p.quote { font-size: 1.1em; line-height: 1.2em;} 
+
+section.how-to blockquote p.credit { font-size: .85em; } 
+
+/* navigation */
+nav {padding-left: 120px;}
+nav > ul {padding-left:10px}
+}
